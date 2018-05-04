@@ -17,7 +17,7 @@ function Perceptron(){
   this.guess = function(inputs){
     sum = 0;
     for(let i = 0; i < this.weight.length; i++){
-      sum += this.weight[i] * inputs[i];
+      sum += this.weight[i] * inputs[i] * inputs[i];
     }
     return sign(sum);
   }
