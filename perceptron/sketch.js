@@ -1,4 +1,4 @@
-
+let g;
 let p;
 let points;
 let w;
@@ -8,6 +8,7 @@ function setup(){
   //w = min(, );
   createCanvas(window.innerWidth, window.innerHeight);
   background(128);
+  g = new Grid();
 }
 
 function draw(){
@@ -21,4 +22,5 @@ function draw(){
   }
   stroke(0);
   line(0, 0, width, height);
+  g.show();
 }
